@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+}
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    background:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(./img/sunny.jpg) no-repeat center/cover;
+}
+.container{
+    width: 350px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: url(./img/sunny.jpg) no-repeat center/cover;
+}
+.search{
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.4);
+    font-size: 20px;
+    transition: 0.4s;
+}
+.search:focus{
+    border-radius: 15px 0 15px 0;
+    background: rgba(255,255,255,0.8);
+}
+
+.place{
+    margin: 40px 0 0 0;
+    font-size: 30px;
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
+}
+
+.temperature{
+    font-size: 50px;
+    border-radius: 10px;
+    margin: 0 50px;
+    padding: 30px 0;
+    box-shadow: 4px 5px rgba(0,0,0,0.4);
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
+    background: rgba(255,255,255,0.4);
+}
+
+.time{
+    margin: 15px 0 20px;
+    font-size: 16px;
+}
+.description{
+    font-style: inherit;
+    font-size: 40px;
+    margin: 30px 20px;
+    text-shadow: 2px 2px rgba(0,0,0,0.7);
+}
+.more-description{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+}
+.more-description div{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.more-description i{
+    padding: 10px 0;
+}
+.content{
+    color: white;
+    transition: 0.4s;
+}
+.hide{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.rain{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(./img/rain.jpg) no-repeat center/cover;;
+}
+
+.rain .container{
+    background: url(./img/rain.jpg) no-repeat center/cover;
+}
+
+.sun{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(./img/sunny.jpg) no-repeat center/cover;;
+}
+
+.sun .container{
+    background: url(./img/sunny.jpg) no-repeat center/cover;
+}
+.cold{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(./img/cold.jpg) no-repeat center/cover;;
+}
+
+.cold .container{
+    background: url(./img/cold.jpg) no-repeat center/cover;
+}
+.cold .more-description div{
+    color: black;
+}
+
+.sleet{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)), url(./img/sleet.gif) no-repeat center/cover;;
+}
+
+.sleet .container{
+    background: url(./img/sleet.gif) no-repeat center/cover;
+}
